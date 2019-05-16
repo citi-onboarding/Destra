@@ -14,3 +14,28 @@ class QuemSomos(SingletonModel):
     class Meta:
         verbose_name = "Quem somos"
 
+class Servicos (models.Model):
+    title = models.CharField(max_length=100, null=False, blank=False)
+    text = models.TextField(null=True, blank=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_date']
+        verbose_name = 'Serviço'
+        verbose_name_plural = 'Serviços'
+
+    def __str__(self):
+        return self.title
+
+class Publicacoes (models.Model):
+    title = models.CharField(max_length=100, null=False, blank=False)
+    created_date = models.DateTimeField(auto_now_add=True)
+    url = models.URLField(max_length=300)
+
+    class Meta:
+        ordering = ['-created_date']
+        verbose_name = 'Publicação'
+        verbose_name_plural = 'Publicações'
+    
+    def __str__(self):
+        return self.title
