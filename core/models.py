@@ -8,8 +8,8 @@ class QuemSomos(SingletonModel):
     visao = models.TextField()
     valores = models.TextField()
     
-    def __unicode__(self):
-        return u"Quem somos"
+    def __str__(self):
+        return "Quem somos"
 
     class Meta:
         verbose_name = "Quem somos"
