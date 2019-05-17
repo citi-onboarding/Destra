@@ -15,9 +15,10 @@ class QuemSomos(SingletonModel):
         verbose_name = "Quem somos"
 
 class Servicos (models.Model):
-    title = models.CharField(max_length=100, null=False, blank=False)
-    text = models.TextField(null=True, blank=True)
+    title = models.CharField('Título', max_length=100, null=False, blank=False)
+    text = models.TextField('Descrição', null=True, blank=False)
     created_date = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(upload_to='media/servicos', verbose_name='Imagem', null=True, blank=False)
 
     class Meta:
         ordering = ['-created_date']
@@ -28,9 +29,12 @@ class Servicos (models.Model):
         return self.title
 
 class Publicacoes (models.Model):
-    title = models.CharField(max_length=100, null=False, blank=False)
+    title = models.CharField('Título', max_length=100, null=False, blank=False)
     created_date = models.DateTimeField(auto_now_add=True)
-    url = models.URLField(max_length=300)
+    url = models.URLField('Link', max_length=300,null=True, blank=False)
+    image = models.ImageField(upload_to='media/publicacoes', verbose_name='Imagem', null=True, blank=False)
+    
+    # url = models.URLField(max_length=300)
 
     class Meta:
         ordering = ['-created_date']

@@ -14,4 +14,4 @@ class PublicacoesAdmin(admin.ModelAdmin):
     list_display = ('title', 'created_date')
 
 admin.site.register(Servicos, ServicosAdmin)
-admin.site.register(Publicacoes)
+admin.site.register(Publicacoes, PublicacoesAdmin)
