@@ -43,7 +43,7 @@ class Publicacoes (models.Model):
         return self.title
 
 class Parceiros (models.Model):
-    title = models.CharField('Título', max_length=100, null=False, blank=False)
+    title = models.CharField('Empresa', max_length=100, null=False, blank=False)
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
     image = models.ImageField(upload_to='media/parceiros', verbose_name='Imagem', null=True, blank=False)
     url = models.URLField('Link', max_length=300,null=True, blank=False)
