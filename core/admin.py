@@ -4,9 +4,6 @@ from .models import QuemSomos
 from .models import Servicos
 from .models import Publicacoes
 
-admin.site.register(QuemSomos, SingletonModelAdmin)
-config = QuemSomos.objects.get()
-
 class ServicosAdmin(admin.ModelAdmin):
     list_display = ('title', 'created_date')
 
@@ -15,3 +12,7 @@ class PublicacoesAdmin(admin.ModelAdmin):
 
 admin.site.register(Servicos, ServicosAdmin)
 admin.site.register(Publicacoes, PublicacoesAdmin)
+admin.site.register(QuemSomos, SingletonModelAdmin)
+
+if(len(QuemSomos.objects.all())>0):
+    config = QuemSomos.objects.get()

@@ -33,8 +33,6 @@ class Publicacoes (models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     url = models.URLField('Link', max_length=300,null=True, blank=False)
     image = models.ImageField(upload_to='media/publicacoes', verbose_name='Imagem', null=True, blank=False)
-    
-    # url = models.URLField(max_length=300)
 
     class Meta:
         ordering = ['-created_date']
