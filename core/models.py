@@ -55,3 +55,16 @@ class Parceiros (models.Model):
     
     def __str__(self):
         return self.title
+
+class Depoimentos(models.Model):
+    nome = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Nome')
+    imagem = models.ImageField(upload_to = 'media/depoimentos', verbose_name = 'Imagem', null = False, blank = False )
+    vinculo = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Vínculo')
+    descricao = models.TextField(verbose_name = 'Descrição', null = False, blank = False)
+    created_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Data de Criação')
+    class Meta:
+        ordering = ['created_date']
+        verbose_name = 'Depoimento'
+    
+    def __str__(self):
+        return self.nome
