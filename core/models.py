@@ -17,11 +17,11 @@ class QuemSomos(SingletonModel):
 class Servicos (models.Model):
     title = models.CharField('Título', max_length=100, null=False, blank=False)
     text = models.TextField('Descrição', null=True, blank=False)
-    created_date = models.DateTimeField(auto_now_add=True)
+    created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
     image = models.ImageField(upload_to='media/servicos', verbose_name='Imagem', null=True, blank=False)
 
     class Meta:
-        ordering = ['-created_date']
+        ordering = ['title']
         verbose_name = 'Serviço'
         verbose_name_plural = 'Serviços'
 
@@ -30,14 +30,28 @@ class Servicos (models.Model):
 
 class Publicacoes (models.Model):
     title = models.CharField('Título', max_length=100, null=False, blank=False)
-    created_date = models.DateTimeField(auto_now_add=True)
-    url = models.URLField('Link', max_length=300,null=True, blank=False)
+    created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
     image = models.ImageField(upload_to='media/publicacoes', verbose_name='Imagem', null=True, blank=False)
-
+    url = models.URLField('Link', max_length=300,null=True, blank=False)
+    
     class Meta:
         ordering = ['-created_date']
         verbose_name = 'Publicação'
         verbose_name_plural = 'Publicações'
+    
+    def __str__(self):
+        return self.title
+
+class Parceiros (models.Model):
+    title = models.CharField('Empresa', max_length=100, null=False, blank=False)
+    created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
+    image = models.ImageField(upload_to='media/parceiros', verbose_name='Imagem', null=True, blank=False)
+    url = models.URLField('Link', max_length=300,null=True, blank=False)
+
+    class Meta:
+        ordering = ['title']
+        verbose_name = 'Parceiro'
+        verbose_name_plural = 'Parceiros'
     
     def __str__(self):
         return self.title
