@@ -58,7 +58,7 @@ class Parceiros (models.Model):
 
 class Depoimentos(models.Model):
     nome = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Nome')
-    imagem = models.ImageField(upload_to = 'media/depoimentos', verbose_name = 'Imagem', null = False, blank = False )
+    imagem = models.ImageField(upload_to = 'media/depoimentos', verbose_name = 'Foto', null = False, blank = False )
     vinculo = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Vínculo')
     descricao = models.TextField(verbose_name = 'Descrição', null = False, blank = False)
     created_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Data de Criação')
