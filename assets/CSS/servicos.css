@@ -1,0 +1,98 @@
+:root{
+    font-size: 15px;}
+body{
+    margin: 0;}
+@font-face {
+    font-family: 'Sifonn Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Sifonn Pro'), url('SIFONN_PRO.woff') format('woff');
+}
+
+#servicos-id{
+    background-color: #AAAAAA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ECECEC;
+}
+@media (max-width:700px){
+    #servicos-id{
+        align-items: center;
+    }
+}
+#servicos-titulo{
+    padding: 6% 0 0 8%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+#servicos-scroll{
+    display: -webkit-box;
+    justify-content: space-between;
+    align-self: center;
+    width: 85%;
+    overflow-x: auto;
+}
+#servicos-scroll::-webkit-scrollbar{}
+#servicos-scroll::-webkit-scrollbar-thumb{
+    background-color: rgba(236, 236, 236, 0.603);
+    border-radius:10px;
+}
+.servicos-scroll-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    margin-right: 30px;
+    background-color: white;
+}
+.box-top{
+    width: 62px;
+    height: 66px;
+    margin: 10px;
+    background: #013600;
+    border-radius: 50px;
+}
+.box-top img{
+    width: 40px;
+    height: 40px;
+    padding: 12px;
+}
+
+.box-center1{
+    height: 42px;
+    width: 100%;
+}
+.box-center1 h3{
+    font-family: 'Sifonn Pro';
+    font-weight: bold;
+    text-align: center;
+    color: #013600;
+    font-size: 1rem;
+    margin: 0;
+}
+.box-center2{
+    height: 120px;
+    width: 100%;
+}
+.box-center2 p{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    color: #013600;
+    margin: 22px 10px;
+}
+.box-footer{
+    height: 46px;
+    width: 100%;
+    background-color: #013600;
+}
+.box-footer p{
+    font-family: 'Sifonn Pro';
+    font-weight: bold;
+    color: white;
+    text-align: right;
+    margin: 13px 8px 0 0;
+}
