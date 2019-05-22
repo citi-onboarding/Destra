@@ -127,12 +127,23 @@ footer
     flex-direction: row;
     align-items: center;
 }
+#frase
+{
+    display: flex;
+    align-items: center;
+}
 #logo-citi img
 {
-    height: 20px;
-    width: 40;
+    height: 15px;
+    width: 30px;
+    padding-left: 5px;
 }
-
+.img-frase-citi
+{
+    width: 10px;
+    height: 10px;
+    color: white;
+}
 /* Responsividade */
 @media(max-width: 800px)
 {
