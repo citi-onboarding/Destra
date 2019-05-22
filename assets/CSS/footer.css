@@ -1,0 +1,167 @@
+.root
+{
+    font-size: 15px;
+    --verdeEscuro: #014b00;
+}
+body
+{
+    margin: 0;
+}
+footer
+{
+    background-color: #014b00;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#conteudo-footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 25px 0px;
+    flex-wrap: wrap;
+}
+#logo-destra-footer img
+{
+    width: 100px;
+    height: 100px;
+}
+#titulo-nome-footer
+{
+    text-align: center;
+}
+#nome-empresa
+{
+    margin: 0;
+    font-size: 1.5rem;
+}
+#titulo-footer
+{
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+#container-contatos-logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    min-width: 400px;
+}
+#reparticoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 300px;   
+}
+#reparticao
+{
+    display: flex;
+    flex-direction: column;
+}
+.contatos-redes-sociais
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 0px;
+}
+.contatos-redes-sociais p
+{
+    padding-left: 10px;
+}
+.forma-contato p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.logo-rede-social img
+{
+    width: 25px;
+    height: 25px;
+}
+#mapa-localizacao
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#mapa
+{
+    width: 210px;
+    height: 160px;
+    background-color: white;
+}
+#localizacao
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    width: 220px;
+    
+}
+#localizacao img
+{
+    width: 15px;
+    height: 21px;
+    padding-right: 10px;
+}
+#frase-empresa
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#logo-citi img
+{
+    height: 20px;
+    width: 40;
+}
+
+/* Responsividade */
+@media(max-width: 800px)
+{
+    #conteudo-footer
+    {
+        flex-direction: column;
+    }
+}
+@media(max-width: 600px)
+{
+    #container-contatos-logo
+    {
+        flex-direction: column;
+        min-width: 170px;
+        width: 180px;
+        padding-bottom: 10px;
+    }
+    #reparticoes
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+@media(min-width: 601px)
+{
+    #titulo-nome-footer
+    {
+        display: none;
+    }
+    #mapa-localizacao
+    {
+        display: none;
+    }
+}
