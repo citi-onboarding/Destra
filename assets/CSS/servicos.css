@@ -34,9 +34,11 @@ body{
     width: 85%;
     overflow-x: auto;
 }
-#servicos-scroll::-webkit-scrollbar{}
+#servicos-scroll::-webkit-scrollbar{
+    height: 10px;
+}
 #servicos-scroll::-webkit-scrollbar-thumb{
-    background-color: rgba(236, 236, 236, 0.603);
+    background-color: #ffffff;
     border-radius:10px;
 }
 .servicos-scroll-box{
@@ -71,7 +73,7 @@ body{
     text-align: center;
     color: #013600;
     font-size: 1rem;
-    margin: 0;
+    margin: 0 5px;
 }
 .box-center2{
     height: 120px;
@@ -80,9 +82,9 @@ body{
 .box-center2 p{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: #013600;
-    margin: 22px 10px;
+    margin: 12px;
 }
 .box-footer{
     height: 46px;
