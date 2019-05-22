@@ -36,6 +36,7 @@ footer
 #titulo-nome-footer
 {
     text-align: center;
+    width: 100%;
 }
 #nome-empresa
 {
@@ -44,7 +45,7 @@ footer
 }
 #titulo-footer
 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 25px;
@@ -99,9 +100,10 @@ footer
 }
 #mapa
 {
-    width: 210px;
-    height: 160px;
+    width: 270px;
+    height: 140px;
     background-color: white;
+    border: 8px solid #013600;
 }
 #localizacao
 {
@@ -109,14 +111,14 @@ footer
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    font-size: 0.75rem;
-    width: 220px;
+    font-size: 0.8rem;
+    width: 270px;
     
 }
 #localizacao img
 {
-    width: 15px;
-    height: 21px;
+    width: 19px;
+    height: 26px;
     padding-right: 10px;
 }
 #frase-empresa
@@ -137,6 +139,7 @@ footer
     #conteudo-footer
     {
         flex-direction: column;
+        width: 100%;
     }
 }
 @media(max-width: 600px)
@@ -145,7 +148,7 @@ footer
     {
         flex-direction: column;
         min-width: 170px;
-        width: 180px;
+        width: 250px;
         padding-bottom: 10px;
     }
     #reparticoes
