@@ -1,0 +1,67 @@
+:root
+{
+    font-size: 15px;
+}
+body
+{
+    margin: 0;
+}
+#contato-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 600px;
+    background-color: green;
+}
+#container-nome-assunto
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+#container-campo
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#container-campo input
+{
+    border-radius: 7px;;
+}
+#container-campo-email
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#container-campo-email input
+{
+    border-radius: 7px;
+    height: 20px;
+}
+.contato-text-input
+{
+    width: 99%;
+    height: 20px;
+}
+#container-campo-mensagem
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#container-campo-mensagem textarea
+{
+    border-radius: 7px;
+    height: 100px;
+}
+#contato-btn
+{
+    border-radius: 3px;
+    height: 60px;
+    width: 200px;
+}
