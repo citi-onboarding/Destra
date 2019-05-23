@@ -53,6 +53,7 @@
             </div>
         {% endfor %}
         </div>
+    </section>
     <section id="sobre-nos-id">
 
     </section>
@@ -66,7 +67,46 @@
 
     </section>
     <section id="contato-id">
+        <img src="{% static 'imagens/PIXABAY/PIXABAY.png' %}"/>
+        <section id="container-contato">
+          <div id="container-contato-form">
+            <div id="titulo-contato">
+                <h2>Contato</h2>
+            </div>
+            <form id="contato-form"  method="POST" autocomplete="off">
+              {% csrf_token %}
+                <div id="container-nome-assunto">
+                  <div class="container-campo">
+                    <label for="Nome" class="contato-label">Nome</label>
+                    <input class="contato-text-input" type="text" name="nome" required="required">
+                  </div>
+                  <div class="container-campo">
+                    <label for="Assunto" class="contato-label">Assunto</label>
+                    <input class="contato-text-input" type="text" name="assunto" required="required">
+                  </div>
+                </div>
+                <div id="container-campo-email">
+                  <label for="Email" class="contato-label">Email</label>
+                  <input class="contato-input-email" type="email" name="email" required="required">
+                </div>
+                <div id="container-campo-mensagem">
+                  <label for="Mensagem" class="contato-label" id="contato-mensagem-label">Mensagem</label>
+                  <textarea class="contato-textarea" name="mensagem" required="required"> </textarea>
+                </div>
+                <p class="contato-feedback"></p>
+                <input id="contato-btn" type="submit" value="ENVIAR">
+            </form>
+          </div>
+            <section id="mapa-localizacao-contato">
+                <div id="mapa-contato">
 
+                </div>
+                <div id="localizacao-contato">
+                    <img src="{% static 'imagens/maps-and-flags.svg' %}"/>
+                    <p>Avenida Aluízio da Silva Gomes, 50, Granja dos Cavaleiros - Maceió, RJ</p>
+                </div>
+            </section>
+        </section>
     </section>
     <footer>
 
