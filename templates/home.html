@@ -30,8 +30,29 @@
 
     </section>
     <section id="servicos-id">
-
-    </section>
+        <h2 id="servicos-titulo">Serviços</h2>
+        <div id="servicos-scroll">
+        {% for servico in servicos %}
+             <div class="servicos-scroll-box">
+                <div class="box-top">
+                    <img src="{{ servico.image.url }}"/>
+                </div>
+                <div class="box-center1">
+                    <h3>
+                        {{ servico.title }}
+                    </h3> 
+                </div>
+                <div class="box-center2">
+                    <p>
+                        {{ servico.text }}
+                    </p>
+                </div>
+                <div class="box-footer">
+                    <p>Contate-nos!</p> 
+                </div>
+            </div>
+        {% endfor %}
+        </div>
     <section id="sobre-nos-id">
 
     </section>
