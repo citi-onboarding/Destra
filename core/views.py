@@ -24,4 +24,4 @@ class HomeView(generic.TemplateView):
             'email':email,
             'mensagem':mmensagem
         },)
-        return HttpResponseRedirect(reverse_lazy("home"))
+        return HttpResponseRedirect(reverse_lazy("index"))
