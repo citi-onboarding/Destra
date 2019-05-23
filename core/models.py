@@ -18,7 +18,7 @@ class Servicos (models.Model):
     title = models.CharField('Título', max_length=100, null=False, blank=False)
     text = models.TextField('Descrição', null=True, blank=False)
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
-    image = models.ImageField(upload_to='media/servicos', verbose_name='Imagem', null=True, blank=False)
+    image = models.ImageField(upload_to='servicos/', verbose_name='Imagem', null=True, blank=False)
 
     class Meta:
         ordering = ['title']
@@ -31,7 +31,7 @@ class Servicos (models.Model):
 class Publicacoes (models.Model):
     title = models.CharField('Título', max_length=100, null=False, blank=False)
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
-    image = models.ImageField(upload_to='media/publicacoes', verbose_name='Imagem', null=True, blank=False)
+    image = models.ImageField(upload_to='publicacoes/', verbose_name='Imagem', null=True, blank=False)
     url = models.URLField('Link', max_length=300,null=True, blank=False)
     
     class Meta:
@@ -45,7 +45,7 @@ class Publicacoes (models.Model):
 class Parceiros (models.Model):
     title = models.CharField('Empresa', max_length=100, null=False, blank=False)
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
-    image = models.ImageField(upload_to='media/parceiros', verbose_name='Imagem', null=True, blank=False)
+    image = models.ImageField(upload_to='parceiros/', verbose_name='Imagem', null=True, blank=False)
     url = models.URLField('Link', max_length=300,null=True, blank=False)
 
     class Meta:
@@ -58,7 +58,7 @@ class Parceiros (models.Model):
 
 class Depoimentos(models.Model):
     nome = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Nome')
-    imagem = models.ImageField(upload_to = 'media/depoimentos', verbose_name = 'Foto', null = False, blank = False )
+    imagem = models.ImageField(upload_to = 'depoimentos/', verbose_name = 'Foto', null = False, blank = False )
     vinculo = models.CharField(max_length = 100, null = False, blank = False, verbose_name = 'Vínculo')
     descricao = models.TextField(verbose_name = 'Descrição', null = False, blank = False)
     created_date = models.DateTimeField(auto_now_add = True, verbose_name = 'Data de Criação')
