@@ -7,8 +7,12 @@ $('.scrollSuave').click(function() {
 });
 
 let mainNav = document.getElementById('jsMenu');
+let buttonNav = document.getElementById('jsHamburguer');
+let buttonNavClose = document.getElementById('jsClose');
 
 var $doc = $('html, body');
-$('.jsNavbarToggle').click(function() {
+$('.jsNavbarSwitch').click(function() {
     mainNav.classList.toggle('active');
+    buttonNav.classList.toggle('activeHamburguer');
+    buttonNavClose.classList.toggle('activeClose');
 });
