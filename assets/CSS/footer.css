@@ -32,8 +32,7 @@ footer
     font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     color: white;
-    padding-top: 70px;
-    padding-bottom: 25px;
+    padding: 25px 0px;
     flex-wrap: wrap;
 }
 #logo-destra-footer img
@@ -205,5 +204,12 @@ footer
     #mapa-localizacao
     {
         display: none;
+    }
+}
+@media(max-width: 600px)
+{
+    #conteudo-footer
+    {
+        padding-top: 70px;
     }
 }
