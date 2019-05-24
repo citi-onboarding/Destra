@@ -6,9 +6,9 @@ $('.scrollSuave').click(function() {
     return false;
 });
 
-let mainNav = document.getElementById('js-menu');
+let mainNav = document.getElementById('jsMenu');
 
 var $doc = $('html, body');
-$('.js-navbar-toggle').click(function() {
+$('.jsNavbarToggle').click(function() {
     mainNav.classList.toggle('active');
 });
