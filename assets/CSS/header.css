@@ -1,0 +1,126 @@
+#navbar-id {
+    position: fixed;
+    border: 1px solid black;
+    background-color: #013600;
+    color: #F2E8E8;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-logo{
+    padding: 0 0 0 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sifonn Pro';
+    font-weight: bold;
+    font-size: 2.3rem;
+} 
+.navbar-nav{
+    min-width: 55%;
+    display: flex;
+    font-size: 1rem;
+}
+.navbar-nav ul{
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar-nav ul li{
+    display: flex;
+    padding: 0 10px; 
+}
+#navbar-id a{
+    text-decoration: none;
+    color: #F2E8E8;
+}
+#div-icons-navbar{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 15px;
+}
+#button-navbar{
+    display: none;
+}
+.navbar-nav2{
+    display: none;
+}
+.button-navbar-close{
+    display: none;
+}
+
+@media (max-width: 850px){
+    #navbar-id{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .navbar-logo{
+        padding: 5px 0 0 0;
+    }
+    .navbar-nav{
+        display: none;
+    }
+    .navbar-nav2{
+        display: none;
+    }
+    .active {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-nav2 ul{
+        padding-bottom: 5px;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .navbar-nav2 ul li{
+        display: flex;
+        padding: 20px 0 10px 0;
+        font-size: 1.5rem;
+    }
+    #div-icons-navbar2{
+        width: 120px;
+        padding: 0%;
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    #div-icons-navbar2 svg{
+        width: 35px;
+        height: 35px;
+    }
+    #button-navbar{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        border: 0;
+        background-color: transparent;
+        position: absolute;
+        right: 0;  
+        top: 10px;
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .activeHamburguer{
+        display: none;
+    }
+    .close{
+        display: none;
+    }
+    .activeClose{
+        display: flex;
+        width: 55px;
+        height: 30px;
+    }
+}
