@@ -1,0 +1,131 @@
+:root
+{
+    font-size:15px;
+}
+#depoimentos-id
+{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f3ffe4;
+}
+#container-carrossel-depoimentos
+{
+    width: 80%;
+}
+#container-itens-button
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carrossel-depoimentos
+{
+    max-width: 100%;
+    width: 85%;
+    /* height: 350px; */
+    display: flex;
+    align-items: center;
+}
+
+.item-carrossel-depoimentos
+{
+    display: flex !important;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+}
+.container-depoimento-carrossel
+{
+    display: flex;
+    font-size: 2rem;
+}
+.container-depoimento-nome
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 90px 0px;
+}
+.nome-pessoa-depoimento
+{
+    font-size: 3rem;
+}
+.nome-pessoa-depoimento p
+{
+    margin: 0;
+}
+.depoimento
+{
+    max-width: 500px;
+}
+.depoimento p
+{
+    margin: 0;
+}
+.container-img-carrossel-depoimentos img
+{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    margin-left: 40px;
+    margin-right: 80px;
+    padding: 60px 0px;
+}
+.aspas-1 img
+{
+    width: 32px;
+    height: 25px;
+    padding-right: 20px;
+}
+.aspas-2 img
+{
+    width: 32px;
+    height: 25px;
+    transform: rotate(180deg);
+    padding-left: 20px;
+}
+.btn-prev-carrossel-depoimentos
+{
+    width: 35px;
+    height: 35px;
+}
+.btn-prev-carrossel-depoimentos img
+{
+    width: 35px;
+    height: 35px;
+}
+.btn-next-carrossel-depoimentos
+{
+    width: 35px;
+    height: 35px;
+
+}
+.btn-next-carrossel-depoimentos img
+{
+    width: 35px;
+    height: 35px;
+}
+.btn-slick
+{
+    margin: 0;
+    padding: 0px 20px;   
+}
+.ponto-carrossel-depoimentos
+{
+    width: 15px;
+    height: 15px;
+    background-color: #aaaaaa;
+    border-radius: 100px;
+}
+.slick-active .ponto-carrossel-depoimentos{
+    background-color: #013600;
+}
+.slick-dots 
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 90%;
+}

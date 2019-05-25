@@ -20,6 +20,7 @@
     <!-- font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Montserrat', sans-serif; -->
+  
     <title>Document</title>
 </head>
 <body>
@@ -124,7 +125,64 @@
         </div>
     </section>
     <section id="depoimentos-id">
-
+        <div id="container-carrossel-depoimentos">
+            <div id="container-itens-button">
+                <div class="btn-prev-carrossel-depoimentos btn-slick">
+                    <img src="{% static 'imagens/play-button-back.svg' %}"/>
+                </div>
+                <div class="carrossel-depoimentos">
+                    <div class="item-carrossel-depoimentos">
+                        <div class="container-img-carrossel-depoimentos">
+                            <img src="imagens/Foto.jpg"/>
+                        </div>
+                        <div class="container-depoimento-nome">
+                            <div class="container-depoimento-carrossel">
+                                <div class="aspas-1">
+                                    <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                </div>
+                                <div class="depoimento">
+                                    <p>Muito boa empresa, me ajudou bastante. Com certeza usarei os serviços de novo!</p>
+                                </div>
+                                <div class="aspas-2">
+                                    <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                </div>
+                            </div>
+                            <div class="nome-pessoa-depoimento">
+                                <p>Amanda Melo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-carrossel-depoimentos">
+                        <div class="container-img-carrossel-depoimentos">
+                            <img src="imagens/Foto.jpg"/>
+                        </div>
+                        <div class="container-depoimento-carrossel">
+                            <div class="aspas">
+                                <img src=""/>
+                            </div>
+                            <div>
+                                <p></p>
+                            </div>
+                            <div class="aspas">
+                                <img src=""/>
+                            </div>
+                        </div>
+                        <div class="nome-pessoa-depoimento">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                </div>
+                <div class="btn-next-carrossel-depoimentos btn-slick">
+                    <img src="{% static 'imagens/play-button-next.svg' %}"/>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="parceiros-id">
         <h2 id="parceiros-titulo">Parceiros</h2>
@@ -269,6 +327,10 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'JS/header.js' %}"></script>
+<<<<<<< HEAD
     <script type="text/javascript" src="{% static 'JS/publicacoes.js' %}"></script>
+=======
+    <script type="text/javascript" src="{% static 'JS/depoimentos.js' %}"></script>
+>>>>>>> Iniciando a seção depoimentos
 </body>
 </html>
