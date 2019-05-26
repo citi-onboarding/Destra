@@ -5,7 +5,7 @@
     flex-direction: column;
     color: #ECECEC;
 }
-#publicacoes-titulo{
+#publicacoes-id h2{
     padding: 6% 0 2vh 8%;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
@@ -19,26 +19,26 @@
         padding: 6% 0 6vh 0;
     }
 }
-#publicacoes-central{
-    padding: 2% 6%;
+
+#pub-central{
     display: flex;
     align-self: center;
-    align-items: center;
-    flex-direction: row;
-    max-width: 80%;
-    overflow: hidden;
+    width: 85%;
+    height: 50%;
 }
 .pub-button-carrossel{
-    width: 25px;
-    height: 25px;
+    align-self: center;
+    width: 30px;
+    height: 30px;
 }
 #pub-carrossel-externo{
-    overflow: hidden;   
-    padding: 0 10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #AAAAAA;
 }
 .slick-dots li button:before{
     color: #F2E8E8;
-    font-size: 1rem;
+    font-size: 0.8rem;
     opacity: 1;
 }
 .slick-dots li.slick-active button:before{
@@ -48,7 +48,7 @@
 .pub-box-carrossel{
     height: 40vh;
     background-color: white;
-    margin: 0 20px 10px 20px;
+    margin: 0 20px 20px 20px;
     flex-direction: column;
 }
 .pub-box-carrossel img{
@@ -57,45 +57,26 @@
     margin: 0;
 }
 .pub-box-carrossel p{
-    padding: 12px 15px;
+    padding: 4%;
     margin: 0%;
     color: #0E5D08;
     text-align: center;
     font-size: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
 }
-@media (max-width: 700px){
-    #publicacoes-central{
-        max-width: 70%;
+
+@media (max-width:550px){
+    #pub-central{
+        width: 50%;
     }
     .pub-button-carrossel{
         display: none;
     }
-    .pub-box-carrossel{
-        height: 43vh;
-        margin: 0 50px 20px 50px;
-    }
-    .pub-box-carrossel img{
-        height: 30vh;
-    }
-    .pub-box-carrossel p{
-        margin: 0%;
-        padding: 9%;
-        font-size: 1.4rem;
-    }
     .slick-dots li button:before{
-        font-size: 0.5rem;
-    }
-}
-@media (max-width: 550px){
-    #publicacoes-central{
-        max-width: 90%;
-        padding: 0%;
+        font-size: 0.6rem;
     }
     .pub-box-carrossel p{
-        padding: 8%;
-    }
-    .pub-box-carrossel p{
-        font-size: 1rem;
+        padding: 8px;
+        font-size: 0.8rem;
     }
 }
