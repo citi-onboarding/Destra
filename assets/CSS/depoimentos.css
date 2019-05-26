@@ -6,8 +6,15 @@
 {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: #f3ffe4;
+}
+#titulo-depoimentos
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 #container-carrossel-depoimentos
 {
@@ -23,7 +30,7 @@
 {
     max-width: 100%;
     width: 85%;
-    /* height: 350px; */
+    /* height: 350px;*/ 
     display: flex;
     align-items: center;
 }
@@ -32,25 +39,40 @@
 {
     display: flex !important;
     align-items: center;
+    justify-content: center;
     background-color: white;
     border-radius: 12px;
+}
+.container-item-carrossel-depoimentos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
 }
 .container-depoimento-carrossel
 {
     display: flex;
-    font-size: 2rem;
+    font-size: 1.5rem; 
 }
 .container-depoimento-nome
 {
+    height: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
-    padding: 90px 0px;
+    padding: 60px 0px;
 }
 .nome-pessoa-depoimento
 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-weight: 500;
+    color: #0E5D08;
 }
 .nome-pessoa-depoimento p
 {
@@ -58,7 +80,9 @@
 }
 .depoimento
 {
-    max-width: 500px;
+    max-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 .depoimento p
 {
@@ -69,7 +93,6 @@
     width: 180px;
     height: 180px;
     border-radius: 100%;
-    margin-left: 40px;
     margin-right: 80px;
     padding: 60px 0px;
 }
@@ -79,12 +102,17 @@
     height: 25px;
     padding-right: 20px;
 }
+.aspas-2
+{
+    align-self: flex-end;
+    padding-bottom: 10px;
+}
 .aspas-2 img
 {
     width: 32px;
     height: 25px;
     transform: rotate(180deg);
-    padding-left: 20px;
+    padding-right: 20px;
 }
 .btn-prev-carrossel-depoimentos
 {
