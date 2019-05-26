@@ -90,25 +90,19 @@
 
     </section>
     <section id="publicacoes-id">
-        <h2 id="publicacoes-titulo">Publicações</h2>
-        <div id="publicacoes-central">
+        <h2>Publicações</h2>
+        <div id="pub-central">
             <img class="pub-button-carrossel" src="{% static 'imagens/play-button-back.svg' %}" id="playButtonBack"/>
-            <section id="pub-carrossel-externo">
-                <div class="multiple-items" id="carrossel">
-                    <div class="pub-box-carrossel">
-                        <img src="{% static 'imagens/estatua.png' %}" alt="">
-                        <p>Confira 10 dicas para empreender melhor</p>
+            <div id="pub-carrossel-externo">
+                <div class="multipleItems">
+                    {% for publicacao in publicacoes %}
+                   <a href=" {{ publicaco.url }} " target="_blank"><div class="pub-box-carrossel">
+                        <img src="{{ publicacao.image.url }}"/>
+                        <p> {{ publicacao.title }} </p>
                     </div>
-                    <div class="pub-box-carrossel">
-                        <img src="{% static 'imagens/estatua.png' %}" alt="">
-                        <p>Confira 10 dicas para empreender melhor</p>
-                    </div>
-                    <div class="pub-box-carrossel">
-                        <img src="{% static 'imagens/estatua.png' %}" alt="">
-                        <p>Confira 10 dicas para empreender melhor</p>
-                    </div>
-                </div>
-            </section>
+                    {% endfor %}
+                </div></a>
+            </div>
             <img class="pub-button-carrossel" src="{% static 'imagens/play-button-next.svg' %}" id="playButtonNext"/>
         </div>
     </section>

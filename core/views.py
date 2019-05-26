@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from .models import Servicos
+from .models import Publicacoes
 # from .models import nomeDoModels
 from .models import Parceiros
 
@@ -34,4 +35,5 @@ class HomeView(generic.TemplateView):
         context = super().get_context_data(**kwargs)
         context["servicos"] = Servicos.objects.all()
         context["parceiros"] = Parceiros.objects.all()
+        context["publicacoes"] = Publicacoes.objects.all()
         return context
