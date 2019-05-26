@@ -24,7 +24,7 @@
     display: flex;
     align-self: center;
     width: 85%;
-    height: 50%;
+    height: 60%;
 }
 .pub-button-carrossel{
     align-self: center;
@@ -36,6 +36,10 @@
     overflow: hidden;
     background-color: #AAAAAA;
 }
+.pub-margin-box{
+    margin: 0 30px 20px 30px;
+    text-decoration: none;
+}
 .slick-dots li button:before{
     color: #F2E8E8;
     font-size: 0.8rem;
@@ -46,28 +50,31 @@
     opacity: 1;
 }
 .pub-box-carrossel{
-    height: 40vh;
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
     background-color: white;
-    margin: 0 20px 20px 20px;
     flex-direction: column;
+    border-radius: 10px;
 }
 .pub-box-carrossel img{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     margin: 0;
 }
 .pub-box-carrossel p{
-    padding: 4%;
+    padding: 4% 8%;
     margin: 0%;
     color: #0E5D08;
     text-align: center;
     font-size: 1rem;
     font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 @media (max-width:550px){
     #pub-central{
-        width: 50%;
+        width: 60%;
     }
     .pub-button-carrossel{
         display: none;
@@ -76,7 +83,7 @@
         font-size: 0.6rem;
     }
     .pub-box-carrossel p{
-        padding: 8px;
+        padding: 8px 18px;
         font-size: 0.8rem;
     }
 }
