@@ -6,6 +6,10 @@ $(document).ready(function(){
         customPaging: function(slider, i){
             return (`<div class="ponto-carrossel-depoimentos">
             </div>`)
-        }
+        },
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        adaptiveHeight: true,
     });
  });

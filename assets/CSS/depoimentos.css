@@ -10,15 +10,21 @@
     justify-content: center;
     align-items: center;
     background-color: #f3ffe4;
+    padding: 100px 0px;
 }
-#titulo-depoimentos
+#titulo-depoimentos h2
 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+
 }
 #container-carrossel-depoimentos
 {
     width: 80%;
+    max-width: 1100px;
 }
 #container-itens-button
 {
@@ -48,12 +54,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     width: 90%;
 }
 .container-depoimento-carrossel
 {
     display: flex;
-    font-size: 1.5rem; 
+    font-size: 0.9rem; 
 }
 .container-depoimento-nome
 {
@@ -62,11 +69,11 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 60px 0px;
+    padding: 30px 0px;
 }
 .nome-pessoa-depoimento
 {
-    font-size: 2rem;
+    font-size: 1.1rem;
     padding-top: 10px;
     padding-right: 40px;
     font-family: 'Montserrat', sans-serif;
@@ -88,13 +95,15 @@
 {
     margin: 0;
 }
-.container-img-carrossel-depoimentos img
+.container-img-carrossel-depoimentos
 {
-    width: 180px;
-    height: 180px;
+    object-fit: cover;
+    object-position: top;
+    padding: 30px 0px;
+    margin-right: 50px;
     border-radius: 100%;
-    margin-right: 80px;
-    padding: 60px 0px;
+    width: 120px;
+    height: 120px;
 }
 .aspas-1 img
 {
@@ -116,24 +125,24 @@
 }
 .btn-prev-carrossel-depoimentos
 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 .btn-prev-carrossel-depoimentos img
 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 .btn-next-carrossel-depoimentos
 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 
 }
 .btn-next-carrossel-depoimentos img
 {
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
 }
 .btn-slick
 {
@@ -142,8 +151,8 @@
 }
 .ponto-carrossel-depoimentos
 {
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: #aaaaaa;
     border-radius: 100px;
 }
@@ -155,5 +164,88 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
+    padding-top: 20px;
+}
+
+@media(max-width: 1000px)
+{
+    .container-img-carrossel-depoimentos
+    {
+        margin-right: 30px;
+    }
+}
+@media(max-width: 900px)
+{
+    .container-depoimento-carrossel
+    {
+        font-size: 0.7rem;
+    }
+    .container-img-carrossel-depoimentos
+    {
+        width: 80px;
+        height: 80px;
+    }
+    .nome-pessoa-depoimento
+    {
+        font-size: 0.9rem;
+    }
+    .aspas-1 img
+    {
+        width: 25px;
+        height: 19px;
+        padding-right: 10px;
+    }
+    .aspas-2 img
+    {
+        width: 25px;
+        height: 19px;
+        transform: rotate(180deg);
+        padding-right: 10px;
+    }
+}
+@media(max-width: 800px)
+{
+    .ponto-carrossel-depoimentos
+    {
+        width: 6px;
+        height: 6px;
+    }
+
+}
+
+@media(max-width: 650px)
+{
+    .container-depoimento-carrossel
+    {
+        font-size: 0.5rem;
+    }
+    .container-img-carrossel-depoimentos
+    {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+    .nome-pessoa-depoimento
+    {
+        font-size: 0.7rem;
+    }
+    .aspas-1 img
+    {
+        width: 20px;
+        height: 14px;
+        padding-right: 7px;
+    }
+    .aspas-2 img
+    {
+        width: 20px;
+        height: 14px;
+        transform: rotate(180deg);
+        padding-right: 7px;
+    }
+}
+
+@media(max-width: 500px)
+{
+
 }
