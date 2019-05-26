@@ -96,12 +96,14 @@
             <div id="pub-carrossel-externo">
                 <div class="multipleItems">
                     {% for publicacao in publicacoes %}
-                   <a href=" {{ publicaco.url }} " target="_blank"><div class="pub-box-carrossel">
-                        <img src="{{ publicacao.image.url }}"/>
-                        <p> {{ publicacao.title }} </p>
-                    </div>
+                    <a class="pub-margin-box" href=" {{ publicacao.url }} " target="_blank">
+                       <div class="pub-box-carrossel">
+                            <img src="{{ publicacao.image.url }}"/>
+                            <p> {{ publicacao.title }} </p>
+                        </div>
+                    </a>
                     {% endfor %}
-                </div></a>
+                </div>
             </div>
             <img class="pub-button-carrossel" src="{% static 'imagens/play-button-next.svg' %}" id="playButtonNext"/>
         </div>
