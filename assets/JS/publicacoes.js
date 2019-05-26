@@ -3,16 +3,16 @@ $(document).ready(function(){
         dots: true,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         speed: 200,
         prevArrow: document.querySelector('#playButtonBack'),
         nextArrow: document.querySelector('#playButtonNext'),
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 1200,
               settings: {
                 slidesToShow: 3,
-                slidesToScroll: 1,
+                slidesToScroll: 3,
                 infinite: true,
                 dots: true
               }
@@ -21,7 +21,7 @@ $(document).ready(function(){
               breakpoint: 800,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 1,
+                slidesToScroll: 2,
                 infinite: true,
                 dots: true
               }
