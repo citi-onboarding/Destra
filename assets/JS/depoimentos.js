@@ -12,12 +12,12 @@ $(document).ready(function(){
         slidesToShow: 1,
         adaptiveHeight: true,
         centerMode: true,
-        centerPadding: '60px',
+        centerPadding: '100px',
         responsive: [
             {
                 breakpoint: 750,
                 settings: {
-                    centerPadding: '30px',
+                    centerPadding: '40px',
                 }
             },
         ]
