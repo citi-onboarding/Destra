@@ -96,7 +96,16 @@
 
     </section>
     <section id="parceiros-id">
-
+        <h2 id="parceiros-titulo">Parceiros</h2>
+        <div id="parceiros-central">
+            {% for parceiro in parceiros %}
+                <div class="parceiros-box">
+                    <a href="{{ parceiro.url }}" target="_blank">
+                        <img src="{{ parceiro.image.url }}" alt="{{ parceiro.title }}"/>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
     </section>
     <section id="contato-id">
         <img src="{% static 'imagens/PIXABAY/PIXABAY.png' %}"/>

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic
 from .models import Servicos
 # from .models import nomeDoModels
+from .models import Parceiros
 
 from django.shortcuts import render_to_response
 from django.http import HttpResponseRedirect, HttpResponse  
@@ -32,4 +33,5 @@ class HomeView(generic.TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["servicos"] = Servicos.objects.all()
+        context["parceiros"] = Parceiros.objects.all()
         return context
