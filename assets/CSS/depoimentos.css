@@ -55,6 +55,7 @@
     justify-content: center;
     background-color: white;
     border-radius: 12px;
+    margin: 0px 8px;
 }
 .container-item-carrossel-depoimentos
 {
@@ -64,10 +65,7 @@
     justify-content: space-between;
     width: 90%;
 }
-.slick-current
-{
-    margin: 0px 8px;
-}
+
 .container-depoimento-carrossel
 {
     display: flex;
@@ -313,7 +311,7 @@
     }
     .carrossel-depoimentos
     {
-        width: 230px;
+        width: 360px;
     }
     .container-depoimento-nome
     {
@@ -321,11 +319,11 @@
     }
     .item-carrossel-depoimentos
     {
-        width: 180px;
+        width: 260px;
     }
     .container-item-carrossel-depoimentos
     {
-        width: 150px;
+        width: 220px;
     }
     .container-depoimento-nome
     {
@@ -354,5 +352,24 @@
     #titulo-depoimentos h2
     {
         padding-left: 20%;
+    }
+}
+@media(max-width: 400px)
+{
+    .carrossel-depoimentos
+    {
+        width: 260px;
+    }
+    .container-depoimento-nome
+    {
+        padding: 10px;
+    }
+    .item-carrossel-depoimentos
+    {
+        width: 180px;
+    }
+    .container-item-carrossel-depoimentos
+    {
+        width: 150px;
     }
 }
