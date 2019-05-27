@@ -1,0 +1,37 @@
+#parceiros-id{
+    background-color: #AAAAAA;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ECECEC;
+}
+#parceiros-titulo{
+    padding: 6% 0 0 8%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+@media (max-width:700px){
+    #parceiros-titulo{
+        align-self: center;
+        padding: 6% 0 0 0;
+    }
+}
+#parceiros-central{
+    width: 84%;
+    height: 55%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+}
+.parceiros-box{
+    width: 100px;
+    height: 100px;
+    background-color: #AAAAAA;
+    border: #ECECEC 1px solid;
+    margin: 1%;
+}
