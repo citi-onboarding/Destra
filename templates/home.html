@@ -128,41 +128,44 @@
         <div id="titulo-depoimentos">
             <h2>Depoimentos</h2>
         </div>
-        <div id="container-carrossel-depoimentos">
-            <div id="container-itens-button">
-                <div class="btn-prev-carrossel-depoimentos btn-slick">
-                    <img src="{% static 'imagens/play-button-back.svg' %}"/>
-                </div>
-                <div class="carrossel-depoimentos">
-                    {% for depoimento in depoimentos %}
-                        <div class="item-carrossel-depoimentos">
-                            <div class="container-item-carrossel-depoimentos">
-                                <img class="container-img-carrossel-depoimentos" src="{{ depoimento.imagem.url }}"/>
-                                <div class="container-depoimento-nome">
-                                    <div class="container-depoimento-carrossel">
-                                        <div class="aspas-1">
-                                            <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+        <div id="container-geral-carrossel-depoimentos">
+            <div id="container-carrossel-depoimentos">
+                <div id="container-itens-button">
+                    <div class="btn-prev-carrossel-depoimentos btn-slick">
+                        <img src="{% static 'imagens/play-button-back.svg' %}"/>
+                    </div>
+                    <div class="carrossel-depoimentos">
+                        {% for depoimento in depoimentos %}
+                            <div class="item-carrossel-depoimentos">
+                                <div class="container-item-carrossel-depoimentos">
+                                    <img class="container-img-carrossel-depoimentos" src="{{ depoimento.imagem.url }}"/>
+                                    <div class="container-depoimento-nome">
+                                        <div class="container-depoimento-carrossel">
+                                            <div class="aspas-1">
+                                                <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                            </div>
+                                            <div class="depoimento">
+                                                <p>{{ depoimento.descricao }}</p>
+                                            </div>
+                                            <div class="aspas-2">
+                                                <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                            </div>
                                         </div>
-                                        <div class="depoimento">
-                                            <p>{{ depoimento.descricao }}</p>
+                                        <div class="nome-pessoa-depoimento">
+                                            <p>{{ depoimento.nome }}</p>
                                         </div>
-                                        <div class="aspas-2">
-                                            <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
-                                        </div>
-                                    </div>
-                                    <div class="nome-pessoa-depoimento">
-                                        <p>{{ depoimento.nome }}</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="btn-next-carrossel-depoimentos btn-slick">
-                    <img src="{% static 'imagens/play-button-next.svg' %}"/>
+                        {% endfor %}
+                    </div>
+                    <div class="btn-next-carrossel-depoimentos btn-slick">
+                        <img src="{% static 'imagens/play-button-next.svg' %}"/>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </section>
     <section id="parceiros-id">
         <h2 id="parceiros-titulo">Parceiros</h2>
