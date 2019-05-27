@@ -20,18 +20,31 @@
 #parceiros-central{
     width: 84%;
     height: 55%;
-    background-color: aqua;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     align-self: center;
 }
 .parceiros-box{
-    width: 100px;
-    height: 100px;
-    background-color: #AAAAAA;
-    border: #ECECEC 1px solid;
-    margin: 1%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+.parceiros-box img{
+    object-fit: cover;
+    width: 150px;
+}
+
+@media (max-width: 850px){
+    .parceiros-box{
+        width: 90px;
+        height: 90px;
+    }
+    .parceiros-box img{
+        width: 90px;
+    }
 }
