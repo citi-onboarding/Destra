@@ -56,6 +56,9 @@
     background-color: white;
     border-radius: 12px;
     margin: 0px 8px;
+    -webkit-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 11px -1px rgba(0,0,0,0.23);
 }
 .container-item-carrossel-depoimentos
 {
