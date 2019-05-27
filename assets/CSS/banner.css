@@ -171,3 +171,10 @@
         font-size: 1.5rem;
     }
 }
+@media(max-width: 340px)
+{
+    #conteudo-banner 
+    {
+        height: 80vh;
+    }
+}
