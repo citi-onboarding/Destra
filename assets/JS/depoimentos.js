@@ -11,5 +11,15 @@ $(document).ready(function(){
         speed: 1000,
         slidesToShow: 1,
         adaptiveHeight: true,
+        centerMode: true,
+        centerPadding: '60px',
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    centerPadding: '30px',
+                }
+            },
+        ]
     });
  });
