@@ -64,7 +64,7 @@
         height: auto;
     }
     .navbar-logo{
-        padding: 5px 0 0 0;
+        padding: 5px 0 5px 0;
     }
     .navbar-nav{
         display: none;
@@ -85,8 +85,14 @@
     }
     .navbar-nav2 ul li{
         display: flex;
+        width: 130px;
+        border-bottom: #707070 1px solid ;
         padding: 20px 0 10px 0;
         font-size: 1.5rem;
+    }
+    .navbar-nav2 ul li a{
+        text-align: center;
+        width: 130px;
     }
     #div-icons-navbar2{
         width: 120px;
@@ -108,7 +114,7 @@
         background-color: transparent;
         position: absolute;
         right: 0;  
-        top: 10px;
+        top: 12px;
     }
     .hamburguer{
         display: flex;
@@ -123,5 +129,6 @@
         display: flex;
         width: 55px;
         height: 30px;
+        margin-top: -4px;
     }
 }
