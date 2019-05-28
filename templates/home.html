@@ -80,28 +80,30 @@
         </div>
     </section>
     <section id="servicos-id">
-        <h2 id="servicos-titulo">Serviços</h2>
-        <div id="servicos-scroll">
-        {% for servico in servicos %}
-             <div class="servicos-scroll-box">
-                <div class="box-top">
-                    <img src="{{ servico.image.url }}"/>
+        <div class="container-servicos">
+            <h2 id="servicos-titulo">Serviços</h2>
+            <div id="servicos-scroll">
+            {% for servico in servicos %}
+                <div class="servicos-scroll-box">
+                    <div class="box-top">
+                        <img src="{{ servico.image.url }}"/>
+                    </div>
+                    <div class="box-center1">
+                        <h3>
+                            {{ servico.title }}
+                        </h3> 
+                    </div>
+                    <div class="box-center2">
+                        <p>
+                            {{ servico.text }}
+                        </p>
+                    </div>
+                    <div class="box-footer">
+                        <p>Contate-nos!</p> 
+                    </div>
                 </div>
-                <div class="box-center1">
-                    <h3>
-                        {{ servico.title }}
-                    </h3> 
-                </div>
-                <div class="box-center2">
-                    <p>
-                        {{ servico.text }}
-                    </p>
-                </div>
-                <div class="box-footer">
-                    <p>Contate-nos!</p> 
-                </div>
+            {% endfor %}
             </div>
-        {% endfor %}
         </div>
     </section>
     <section id="sobre-nos-id">
@@ -163,22 +165,24 @@
         
     </section>
     <section id="publicacoes-id">
-        <h2>Publicações</h2>
-        <div id="pub-central">
-            <img class="pub-button-carrossel" src="{% static 'imagens/play-button-back.svg' %}" id="playButtonBack"/>
-            <div id="pub-carrossel-externo">
-                <div class="multipleItems">
-                    {% for publicacao in publicacoes %}
-                    <a class="pub-margin-box" href=" {{ publicacao.url }} " target="_blank">
-                       <div class="pub-box-carrossel">
-                            <img src="{{ publicacao.image.url }}"/>
-                            <p> {{ publicacao.title }} </p>
-                        </div>
-                    </a>
-                    {% endfor %}
+        <div class="container-publicacoes">
+            <h2>Publicações</h2>
+            <div id="pub-central">
+                <img class="pub-button-carrossel" src="{% static 'imagens/play-button-back.svg' %}" id="playButtonBack"/>
+                <div id="pub-carrossel-externo">
+                    <div class="multipleItems">
+                        {% for publicacao in publicacoes %}
+                        <a class="pub-margin-box" href=" {{ publicacao.url }} " target="_blank">
+                        <div class="pub-box-carrossel">
+                                <img src="{{ publicacao.image.url }}"/>
+                                <p> {{ publicacao.title }} </p>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
                 </div>
+                <img class="pub-button-carrossel" src="{% static 'imagens/play-button-next.svg' %}" id="playButtonNext"/>
             </div>
-            <img class="pub-button-carrossel" src="{% static 'imagens/play-button-next.svg' %}" id="playButtonNext"/>
         </div>
     </section>
     <section id="depoimentos-id">
@@ -228,15 +232,17 @@
         
     </section>
     <section id="parceiros-id">
-        <h2 id="parceiros-titulo">Parceiros</h2>
-        <div id="parceiros-central">
-            {% for parceiro in parceiros %}
-                <div class="parceiros-box">
-                    <a href="{{ parceiro.url }}" target="_blank">
-                        <img src="{{ parceiro.image.url }}" alt="{{ parceiro.title }}"/>
-                    </a>
-                </div>
-            {% endfor %}
+        <div class="container-parceiros">
+            <h2 id="parceiros-titulo">Parceiros</h2>
+            <div id="parceiros-central">
+                {% for parceiro in parceiros %}
+                    <div class="parceiros-box">
+                        <a href="{{ parceiro.url }}" target="_blank">
+                            <img src="{{ parceiro.image.url }}" alt="{{ parceiro.title }}"/>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </section>
     <section id="contato-id">
