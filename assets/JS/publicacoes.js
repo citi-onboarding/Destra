@@ -2,12 +2,21 @@ $(document).ready(function(){
     $('.multipleItems').slick({
       dots: true,
       infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4,
+      slidesToShow: 5,
+      slidesToScroll: 5,
       speed: 200,
       prevArrow: document.querySelector('#playButtonBack'),
       nextArrow: document.querySelector('#playButtonNext'),
       responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: true
+          }
+        },
         {
           breakpoint: 1200,
           settings: {
