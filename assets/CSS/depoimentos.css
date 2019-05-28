@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     background-color: #f3ffe4;
-    padding: 100px 0px;
+    padding: 200px 0px;
 }
 #titulo-depoimentos h2
 {
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 90%;
 }
 
@@ -86,7 +86,7 @@
 .nome-pessoa-depoimento
 {
     font-size: 1.1rem;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-right: 40px;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
@@ -94,6 +94,20 @@
     color: #0E5D08;
 }
 .nome-pessoa-depoimento p
+{
+    margin: 0;
+}
+.vinculo-depoimento
+{
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-right: 40px;
+    color: #aaaaaa;
+}
+.vinculo-depoimento p
 {
     margin: 0;
 }
@@ -182,7 +196,7 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     padding-top: 20px;
 }
 @media(min-width: 1500px)
@@ -208,6 +222,10 @@
     .container-img-carrossel-depoimentos
     {
         margin-right: 30px;
+    }
+    .carrossel-depoimentos .slick-dots
+    {
+        width: 85%;
     }
 }
 @media(max-width: 900px)
@@ -283,6 +301,10 @@
     {
         right: 35px;
     }
+    .carrossel-depoimentos .slick-dots
+    {
+        width: 90%;
+    }
 }
 @media(max-width: 700px)
 {
@@ -325,6 +347,11 @@
     .nome-pessoa-depoimento
     {
         font-size: 0.7rem;
+    }
+    .vinculo-depoimento
+    {
+        font-size: 0.5rem;
+        padding-top: 2px;
     }
     .aspas-1 img
     {
@@ -384,6 +411,10 @@
         align-items: center;
     }
     .nome-pessoa-depoimento
+    {
+        padding-right: 0px;
+    }
+    .vinculo-depoimento
     {
         padding-right: 0px;
     }
