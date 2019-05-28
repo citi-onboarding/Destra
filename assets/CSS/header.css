@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 .navbar-logo{
-    padding: 0 0 0 7vw;
+    padding: 5px 0 5px 7vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +92,7 @@
     }
     .navbar-nav2 ul li a{
         text-align: center;
+        z-index: 2;
         width: 130px;
     }
     #div-icons-navbar2{
