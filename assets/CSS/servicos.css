@@ -12,14 +12,10 @@ body{
 #servicos-id{
     background-color: #AAAAAA;
     height: 100vh;
+    max-height: 750px;
     display: flex;
     flex-direction: column;
     color: #ECECEC;
-}
-@media (max-width:700px){
-    #servicos-id{
-        align-items: center;
-    }
 }
 #servicos-titulo{
     padding: 6% 0 0 8%;
@@ -27,11 +23,21 @@ body{
     font-weight: 500;
     font-size: 3rem;
 }
+@media (max-width:700px){
+    #servicos-id{
+        align-items: center;
+    }
+    #servicos-titulo{
+        padding: 6% 0 0 0;
+    }
+}
 #servicos-scroll{
     display: -webkit-box;
     justify-content: space-between;
     align-self: center;
     width: 85%;
+    max-width: 1200px;
+    padding-top: 2%;
     overflow-x: auto;
 }
 #servicos-scroll::-webkit-scrollbar{
