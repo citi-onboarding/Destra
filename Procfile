@@ -1,1 +1,1 @@
-web: gunicorn destra.wsgi
+web: gunicorn Destra.wsgi
