@@ -24,5 +24,5 @@ admin.site.register(QuemSomos, SingletonModelAdmin)
 admin.site.register(Parceiros, ParceirosAdmin)
 admin.site.register(Depoimentos, DepoimentosAdmin)
 
-if(len(QuemSomos.objects.all())>0):
-    config = QuemSomos.objects.get()
+# if(len(QuemSomos.objects.all())>0):
+#     config = QuemSomos.objects.get()
