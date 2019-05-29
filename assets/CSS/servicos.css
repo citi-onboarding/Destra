@@ -41,6 +41,7 @@ body{
     }
     #servicos-titulo{
         text-align: center;
+        margin-top: 0;
     }
 }
 #servicos-scroll{
@@ -64,7 +65,7 @@ body{
     align-items: center;
     flex-direction: column;
     width: 200px;
-    height: 280px;
+    height: 290px;
     margin: 0 30px 10px 0;
     background-color: white;
     -webkit-box-shadow: 0px 0px 19px -10px rgba(0,0,0,1);
@@ -74,7 +75,7 @@ body{
 .box-top{
     width: 62px;
     height: 66px;
-    margin: 10px;
+    margin: 6px;
     background: #013600;
     border-radius: 50px;
 }
@@ -85,8 +86,11 @@ body{
 }
 
 .box-center1{
-    height: 42px;
+    height: 50px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 .box-center1 h3{
     font-family: 'Sifonn Pro';
@@ -97,18 +101,21 @@ body{
     margin: 0 5px;
 }
 .box-center2{
-    height: 120px;
+    height: 122px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 .box-center2 p{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #013600;
-    margin: 12px;
+    margin: 0 12px;
 }
 .box-footer{
-    height: 46px;
+    height: 40px;
     width: 100%;
     background-color: #013600;
 }
@@ -117,5 +124,5 @@ body{
     font-weight: bold;
     color: white;
     text-align: right;
-    margin: 13px 8px 0 0;
+    margin: 10px 8px 0 0;
 }
