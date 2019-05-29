@@ -15,8 +15,8 @@ class QuemSomos(SingletonModel):
         verbose_name = "Quem somos"
 
 class Servicos (models.Model):
-    title = models.CharField('Título', max_length=100, null=False, blank=False)
-    text = models.TextField('Descrição', null=True, blank=False)
+    title = models.CharField('Título', max_length=50, null=False, blank=False)
+    text = models.TextField('Descrição', max_length=200, null=True, blank=False)
     created_date = models.DateTimeField(auto_now_add=True, verbose_name='Data de Criação')
     image = models.ImageField(upload_to='servicos/', verbose_name='Imagem', null=True, blank=False)
 
