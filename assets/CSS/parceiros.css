@@ -1,6 +1,7 @@
 #parceiros-id{
     background-color: #AAAAAA;
     height: 100vh;
+    min-height: 610px;;
     max-height: 750px;
     display: flex;
     justify-content: center;
@@ -24,7 +25,7 @@
 @media (max-width:700px){
     #parceiros-titulo{
         align-self: center;
-        padding: 6% 0 0 0;
+        text-align: center;
     }
 }
 #parceiros-central{

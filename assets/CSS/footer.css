@@ -16,7 +16,7 @@ body
 
 footer
 {
-    background-color: #014b00;
+    background-color: #014B00;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -170,6 +170,9 @@ footer
 /* Responsividade */
 @media(max-width: 800px)
 {
+    footer{
+       background-color:  #0E5D08;
+    }
     #conteudo-footer
     {
         flex-direction: column;

@@ -1,6 +1,7 @@
 #publicacoes-id{
     background-color: #AAAAAA;
     height: 100vh;
+    min-height: 610px;;
     max-height: 750px;
     display: flex;
     justify-content: center;
@@ -26,7 +27,7 @@
         align-items: center;
     }
     #publicacoes-id h2{
-        padding: 6% 0 6vh 0;
+        text-align: center;
     }
 }
 
@@ -98,5 +99,15 @@
     .pub-box-carrossel p{
         padding: 8px 18px;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width:400px){
+    #pub-central{
+        width: 80%;
+    }
+    .pub-box-carrossel p{
+        padding: 12px 18px;
+        font-size: 0.9rem;
     }
 }

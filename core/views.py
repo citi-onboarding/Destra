@@ -23,7 +23,7 @@ class HomeView(generic.TemplateView):
         send_templated_mail(
         template_name='email',
         from_email= email,
-        recipient_list=['clientejosealcantara@gmail.com'],
+        recipient_list=['destra.ejcontato@gmail.com'],
         context={
             'nome':nome,
             'assunto':assunto,
