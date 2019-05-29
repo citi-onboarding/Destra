@@ -65,7 +65,8 @@
         height: auto;
     }
     .navbar-logo{
-        padding: 5px 0 5px 0;
+        margin: 5px 0 5px 0;
+        padding: 0;
     }
     .navbar-nav{
         display: none;
@@ -117,7 +118,7 @@
         background-color: transparent;
         position: absolute;
         right: 0;  
-        top: 12px;
+        margin: 12px 0;
     }
     .hamburguer{
         display: flex;
