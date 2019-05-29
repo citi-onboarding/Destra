@@ -77,6 +77,14 @@
 }
 
 @media (max-width:940px){
+    @media (orientation: landscape) {
+        #conteudo-banner{
+            height: auto;
+        }
+        #frase-botao-banner{
+            padding-bottom: 0%;
+        }
+    }
     #conteudo-banner{
         align-items: center;
         flex-direction: column;
@@ -115,3 +123,4 @@
         font-size: 1.2rem;
     }
 }
+
