@@ -114,42 +114,48 @@
                 <p>{{ quem_somos.descricao }}</p>
             </section>
             <section id="container-missao-visao-valores">
-                <!-- visao -->
-                <section class="container-conteudo-missao-visao-valores container-visao-valores">
-                    <div id="img-visao">
-                        <img src="{% static 'imagens/eyeglasses.svg' %}" />
-                    </div>
-                    <div class="titulo-missao-visao-valores">
-                        <h3>Visão</h3>
-                    </div>  
-                    <div class="descricao-missao-visao-valores">
-                        <p>{{ quem_somos.visao }}</p>
-                    </div>
-                </section>
-                <!-- missao -->
-                <section class="container-conteudo-missao-visao-valores">
-                    <div class="titulo-missao-visao-valores">
-                        <h3>Missão</h3>
-                    </div>
-                    <div class="descricao-missao-visao-valores">
-                        <p>{{ quem_somos.missao }}</p>
-                    </div>
-                    <div id="img-missao">
-                        <img src="{% static 'imagens/flag.svg' %}" />
-                    </div>
-                </section>
-                <!-- valores -->
-                <section class="container-conteudo-missao-visao-valores container-visao-valores">
-                    <div id="img-valores">
-                        <img src="{% static 'imagens/diamond.svg' %}" />
-                    </div>
-                    <div class="titulo-missao-visao-valores">
-                        <h3>Valores</h3>
-                    </div>  
-                    <div class="descricao-missao-visao-valores">
-                        <p>{{ quem_somos.valores }}</p>
-                    </div>
-                </section>
+                <div id="container-visao-valores">
+                    <!-- visao -->
+                    <section class="container-conteudo-missao-visao-valores container-visao">
+                        <div id="img-visao">
+                            <img src="{% static 'imagens/eyeglasses.svg' %}" />
+                        </div>
+                        <div class="titulo-missao-visao-valores">
+                            <h3>Visão</h3>
+                        </div>  
+                        <div class="descricao-missao-visao-valores">
+                            <p>{{ quem_somos.visao }}</p>
+                        </div>
+                    </section>
+                    <!-- valores -->
+                    <section class="container-conteudo-missao-visao-valores container-valores">
+                        <div id="img-valores">
+                            <img src="{% static 'imagens/diamond.svg' %}" />
+                        </div>
+                        <div class="titulo-missao-visao-valores">
+                            <h3>Valores</h3>
+                        </div>  
+                        <div class="descricao-missao-visao-valores">
+                            <p>{{ quem_somos.valores }}</p>
+                        </div>
+                    </section>
+                </div>
+                <div id="linha-missao-visao-valores"></div>
+                <div id="container-missao">
+                    <!-- missao -->
+                    <section class="container-conteudo-missao-visao-valores missao-ordem">
+                        <div class="titulo-missao-visao-valores">
+                            <h3>Missão</h3>
+                        </div>
+                        <div class="descricao-missao-visao-valores">
+                            <p>{{ quem_somos.missao }}</p>
+                        </div>
+                        <div id="img-missao">
+                            <img src="{% static 'imagens/flag.svg' %}" />
+                        </div>
+                    </section>
+                </div>
+                
             </section>
         </div>
         
