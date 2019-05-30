@@ -206,10 +206,18 @@
                         <div class="pub-box-carrossel">
                                 <img src="{{ publicacao.image.url }}"/>
                                 <div class="pub-div-p">
-                                    <p id="pubTitleJS"> {{ publicacao.title }} </p>
+                                    <p id="pubTitleJS" name="publicacoesTitle"> {{ publicacao.title }} </p>
                                 </div>
                             </div>
                         </a>
+                        <a class="pub-margin-box" href=" {{ publicacao.url }} " target="_blank">
+                            <div class="pub-box-carrossel">
+                                    <img src="{{ publicacao.image.url }}"/>
+                                    <div class="pub-div-p">
+                                        <p id="pubTitleJS" name="publicacoesTitle"> {{ publicacao.title }} </p>
+                                    </div>
+                                </div>
+                            </a>
                         {% endfor %}
                     </div>
                 </div>
@@ -241,7 +249,7 @@
                                                 <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
                                             </div>
                                             <div class="depoimento">
-                                                <p>{{ depoimento.descricao }}</p>
+                                                <p name="descricaoDepoimento">{{ depoimento.descricao }}</p>
                                             </div>
                                             <div class="aspas-2">
                                                 <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
