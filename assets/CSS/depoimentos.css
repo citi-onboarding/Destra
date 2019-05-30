@@ -336,7 +336,7 @@
 {
     .container-depoimento-carrossel
     {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     .container-img-carrossel-depoimentos
     {
@@ -373,7 +373,8 @@
     .container-item-carrossel-depoimentos
     {
         flex-direction: column;
-    }
+        width: 270px;
+    }   
     .container-img-carrossel-depoimentos
     {
         width: 40px;
@@ -391,7 +392,7 @@
     }
     .carrossel-depoimentos
     {
-        width: 360px;
+        width: 400px;
     }
     .container-depoimento-nome
     {
@@ -399,12 +400,7 @@
     }
     .item-carrossel-depoimentos
     {
-        width: 260px;
         margin: 0px 8px;
-    }
-    .container-item-carrossel-depoimentos
-    {
-        width: 220px;
     }
     .container-depoimento-nome
     {
@@ -436,7 +432,7 @@
 {
     .carrossel-depoimentos
     {
-        width: 260px;
+        width: 310px;
     }
     .container-depoimento-nome
     {
@@ -448,6 +444,6 @@
     }
     .container-item-carrossel-depoimentos
     {
-        width: 150px;
+        width: 190px;
     }
 }
