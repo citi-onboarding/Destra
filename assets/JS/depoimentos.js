@@ -1,4 +1,4 @@
-var numeroCards = document.getElementsByName("descricaoDepoimento").length;
+let numeroCards = document.getElementsByName("descricaoDepoimento").length;
 $(document).ready(function(){
     if (numeroCards === 1) {
         $('.carrossel-depoimentos').slick({
