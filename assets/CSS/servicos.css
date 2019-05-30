@@ -11,7 +11,6 @@ body{
 
 #servicos-id{
     background-color: #AAAAAA;
-    height: 100vh;
     min-height: 610px;;
     max-height: 750px;
     display: flex;
@@ -64,7 +63,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 200px;
+    width: 215px;
     height: 290px;
     margin: 0 30px 10px 0;
     background-color: white;
