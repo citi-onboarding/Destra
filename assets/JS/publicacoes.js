@@ -1,4 +1,4 @@
-var numeroCards = document.getElementsByName("publicacoesTitle").length;
+let numeroCards = document.getElementsByName("publicacoesTitle").length;
 $(document).ready(function(){
   if (numeroCards === 1) {
     $('.multipleItems').slick({
