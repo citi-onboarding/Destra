@@ -10,14 +10,20 @@
     justify-content: space-between;
 }
 .navbar-logo{
-    padding: 5px 0 5px 7vw;
+    padding: 0 0 0 7vw;
+    height: 58px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Sifonn Pro';
-    font-weight: bold;
-    font-size: 2.3rem;
 } 
+.navbar-logo h1{
+    margin: 0%;
+    display: flex;
+    font-size: 2.3rem;
+    font-family: 'Sifonn Pro';
+    font-weight: normal;
+    text-align: center;
+}
 .navbar-nav{
     width: auto;
     display: flex;
@@ -65,7 +71,7 @@
         height: auto;
     }
     .navbar-logo{
-        margin: 5px 0 5px 0;
+        margin: 0;
         padding: 0;
     }
     .navbar-nav{
