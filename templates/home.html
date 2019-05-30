@@ -205,7 +205,9 @@
                         <a class="pub-margin-box" href=" {{ publicacao.url }} " target="_blank">
                         <div class="pub-box-carrossel">
                                 <img src="{{ publicacao.image.url }}"/>
-                                <p id="pubTitleJS"> {{ publicacao.title }} </p>
+                                <div class="pub-div-p">
+                                    <p id="pubTitleJS"> {{ publicacao.title }} </p>
+                                </div>
                             </div>
                         </a>
                         {% endfor %}
