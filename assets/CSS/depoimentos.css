@@ -57,6 +57,7 @@
 }
 .container-item-depoimentos
 {
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,6 +65,7 @@
 }
 .item-carrossel-depoimentos
 {
+    outline: none;
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -133,6 +135,7 @@
 }
 .depoimento p
 {
+    text-align: justify;
     margin: 0;
 }
 .container-img-carrossel-depoimentos

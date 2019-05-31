@@ -61,7 +61,7 @@ body
 }
 #container-nome-assunto
 {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
