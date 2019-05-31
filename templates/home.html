@@ -234,26 +234,28 @@
                     </div>
                     <div class="carrossel-depoimentos">
                         {% for depoimento in depoimentos %}
-                            <div class="item-carrossel-depoimentos">
-                                <div class="container-item-carrossel-depoimentos">
-                                    <img class="container-img-carrossel-depoimentos" src="{{ depoimento.imagem.url }}"/>
-                                    <div class="container-depoimento-nome">
-                                        <div class="container-depoimento-carrossel">
-                                            <div class="aspas-1">
-                                                <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                            <div class="container-item-depoimentos">
+                                <div class="item-carrossel-depoimentos">
+                                    <div class="container-item-carrossel-depoimentos">
+                                        <img class="container-img-carrossel-depoimentos" src="{{ depoimento.imagem.url }}"/>
+                                        <div class="container-depoimento-nome">
+                                            <div class="container-depoimento-carrossel">
+                                                <div class="aspas-1">
+                                                    <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                                </div>
+                                                <div class="depoimento">
+                                                    <p name="descricaoDepoimento">{{ depoimento.descricao }}</p>
+                                                </div>
+                                                <div class="aspas-2">
+                                                    <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                                </div>
                                             </div>
-                                            <div class="depoimento">
-                                                <p name="descricaoDepoimento">{{ depoimento.descricao }}</p>
+                                            <div class="nome-pessoa-depoimento">
+                                                <p>{{ depoimento.nome }}</p>
                                             </div>
-                                            <div class="aspas-2">
-                                                <img src="{% static 'imagens/left-quotes-sign.svg' %}"/>
+                                            <div class="vinculo-depoimento">
+                                                <p>{{ depoimento.vinculo }}</p>
                                             </div>
-                                        </div>
-                                        <div class="nome-pessoa-depoimento">
-                                            <p>{{ depoimento.nome }}</p>
-                                        </div>
-                                        <div class="vinculo-depoimento">
-                                            <p>{{ depoimento.vinculo }}</p>
                                         </div>
                                     </div>
                                 </div>

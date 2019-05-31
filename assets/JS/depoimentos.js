@@ -20,6 +20,12 @@ $(document).ready(function(){
                         centerPadding: '40px',
                     }
                 },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        centerPadding: '30px',
+                    }
+                },
             ]
         });
  });
