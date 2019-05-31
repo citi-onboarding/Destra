@@ -99,7 +99,7 @@ body
 }
 .contato-text-input
 {
-    width: 99%;
+    width: 100%;
     height: 30px;
 }
 #container-campo-mensagem
@@ -195,6 +195,11 @@ body
 }
 @media(max-width: 600px)
 {
+    #container-contato-form
+    {
+        width: 100%;
+        max-width: 280px;
+    }
     #mapa-localizacao-contato
     {
         display: none;
@@ -213,7 +218,7 @@ body
     }
     #container-campo-mensagem
     {
-        width: 279.172px;
+        width: 100%;
     }
     .container-campo
     {
