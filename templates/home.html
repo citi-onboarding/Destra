@@ -128,7 +128,7 @@
                         </p>
                     </div>
                     <div class="box-footer">
-                        <p>Contate-nos!</p> 
+                        <p><a href="#contato-id" onclick="setAssunto('{{ servico.title }}')" class="contate-nos">Contate-nos!</a></p> 
                     </div>
                 </div>
             {% endfor %}
@@ -428,5 +428,6 @@
     <script type="text/javascript" src="{% static 'JS/header.js' %}"></script>
     <script type="text/javascript" src="{% static 'JS/publicacoes.js' %}"></script>
     <script type="text/javascript" src="{% static 'JS/depoimentos.js' %}"></script>
+    <script type="text/javascript" src="{% static 'JS/servicos.js' %}"></script>
 </body>
 </html>
