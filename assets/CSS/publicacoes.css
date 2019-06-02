@@ -82,7 +82,7 @@
     height: 75px;
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content center;
 }
 .pub-box-carrossel p{
     padding: 4% 5%;
