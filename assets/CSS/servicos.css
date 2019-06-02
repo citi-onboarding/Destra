@@ -75,13 +75,15 @@ body{
     width: 62px;
     height: 66px;
     margin: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #013600;
     border-radius: 50px;
 }
 .box-top img{
     width: 40px;
     height: 40px;
-    padding: 12px;
 }
 
 .box-center1{
