@@ -4,7 +4,7 @@ $(document).ready(function(){
             nextArrow: '.btn-next-carrossel-depoimentos',
             prevArrow: '.btn-prev-carrossel-depoimentos',
             customPaging: function(slider, i){
-                return (`<div class="ponto-carrossel-depoimentos">
+                return (`<div id="ponto-solo" class="ponto-carrossel-depoimentos">
                 </div>`)
             },
             infinite: true,
@@ -29,3 +29,13 @@ $(document).ready(function(){
             ]
         });
  });
+let qtd = document.getElementsByClassName('item-carrossel-depoimentos').length;
+window.onload = function() {
+    setTimeout(() => {
+        if(qtd === 1)
+        {
+            document.querySelector('#ponto-solo').style.visibility = 'hidden';
+        }
+    }, 1);
+};
+    
