@@ -85,6 +85,7 @@
     justify-content center;
 }
 .pub-box-carrossel p{
+    display: flex
     padding: 4% 5%;
     margin: 0%;
     color: #0E5D08;
