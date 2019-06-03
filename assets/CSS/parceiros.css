@@ -20,11 +20,13 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 500;
     font-size: 3rem;
+    margin-top: 100px;
 }
 @media (max-width:700px){
     #parceiros-titulo{
         align-self: center;
         text-align: center;
+        margin: 38px 0;
     }
 }
 #parceiros-central{
